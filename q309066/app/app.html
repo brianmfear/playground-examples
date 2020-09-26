@@ -1,0 +1,14 @@
+<template>
+  <template if:true={languageOptions}>
+    <div class="slds-col slds-p-around_small">
+      <lightning-checkbox-group
+        name="languages"
+        label="Select Languages"
+        value={languageSelection}
+        options={languageOptions}
+        onchange={handleLanguageChange}
+        style="padding-left: 100px;"
+      ></lightning-checkbox-group>
+    </div>
+  </template>
+</template>

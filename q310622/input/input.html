@@ -1,0 +1,8 @@
+<template>
+    <template if:true={field}>
+        <lightning-card title={id}>
+            <lightning-input type="text" label={id} value={value} onchange={handleValueChange}></lightning-input>
+            <p>Value: {value}</p>
+        </lightning-card>
+    </template>
+</template>

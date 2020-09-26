@@ -1,0 +1,14 @@
+<template>
+    <lightning-card
+        title="Product Search"
+        icon-name="custom:custom57"
+    >
+        <div class="slds-m-around_medium">
+            <template if:true={products}>                
+                <lightning-card title="Search Results">
+                    <lightning-datatable data={products} columns={tableColumns} key-field="Id" onrowaction={addToCart}></lightning-datatable>
+                </lightning-card>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+<template>
+    <!-- using tracked variable -->
+    <lightning-button label="Click Me"
+                      onclick={makeSuccess1}
+                      variant={variant1}>
+    </lightning-button>
+    <!-- using getter -->
+    <lightning-button label="Click Me"
+                      onclick={makeSuccess2}
+                      variant={variant2}>
+    </lightning-button>
+    <!-- using event target -->
+    <lightning-button label="Click Me"
+                    onclick={makeSuccess3}
+                    variant="neutral">
+    </lightning-button>
+</template>

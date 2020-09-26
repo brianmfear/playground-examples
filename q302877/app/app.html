@@ -1,0 +1,11 @@
+<template>
+    <lightning-datatable 
+        key-field="id"
+        data={data}
+        columns={cols}>
+    </lightning-datatable>
+    <template for:each={fields} for:item="field">
+        <lightning-input key={field.id} checked={field.checked} type="checkbox" label={field.label} onchange={updateColumns} data-field-name={field.fieldName}>
+        </lightning-input>
+    </template>
+</template>

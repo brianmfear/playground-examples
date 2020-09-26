@@ -1,0 +1,26 @@
+<template>
+    <lightning-input
+        label="New Value"
+        name="new-value"
+        onchange={setNewValue}>
+    </lightning-input>
+    <lightning-input
+        label="New Label"
+        name="new-label"
+        onchange={setNewLabel}>
+    </lightning-input>
+    <lightning-button label="Add" onclick={addNewOption}>
+    </lightning-button>
+    <hr></hr>
+<div>
+    <lightning-button variant="destructive" label="Delete" onclick={deleteOption}>
+    </lightning-button>
+    <lightning-combobox 
+        label="Choose One"
+        name="options"
+        placeholder="Choose One"
+        options={optionList}
+        value={value}>
+    </lightning-combobox>
+</div>
+</template>

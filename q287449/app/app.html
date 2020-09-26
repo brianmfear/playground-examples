@@ -1,0 +1,11 @@
+<template>
+    <div class="wrapper">
+    <template for:each={items} for:item="item">
+        <div key={item.key} class="note">
+            <div>Content in div {item.key}</div>
+             <lightning-button label="Remove Note" onclick={removeNote}></lightning-button>
+        </div>
+    </template>
+    </div>
+    <lightning-button label="Add note" onclick={addNote}></lightning-button>
+</template>

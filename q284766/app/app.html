@@ -1,0 +1,24 @@
+<template>
+    <div class="scrollContainer" onscroll={handleScroll}>
+        <div class="scrollArea" >
+            <table>
+                <thead>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                </thead>
+                <tbody>
+                    <template for:each={items} for:item="item">
+                        <tr key={item.id}>
+                            <td>
+                                {item.name}
+                            </td>
+                            <td>
+                                {item.desc}
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>

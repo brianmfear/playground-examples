@@ -1,0 +1,23 @@
+<template>
+    <div onchange={update}>
+        <input type="text" name="value1" />
+        <br />
+        <input type="checkbox" name="value2" /><label for="value2">Checkbox</label>
+        <br />
+        <select name="value3">
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+        </select>
+        <br />
+        <select name="value4" multiple size="3">
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+        </select>
+    </div>
+    Input Text: {value1}<br/>
+    Input Checkbox: {value2}<br/>
+    Select Single: {value3}<br/>
+    Select Multiple: {value4}<br/>
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <div>
+        <div>
+            <div>
+                <div>Heading </div>
+                <div>
+                    <input type="radio" tabindex="0" id="preview1" name="preview" value="SAMPLE" onclick={getPreview} checked/>
+                    <label for="preview1">label1</label>
+                </div>
+                <div>
+                    <input type="radio" tabindex="0" id="preview2" name="preview" value="BACKUP" onclick={getPreview}/>
+                    <label for="preview2">label2</label>
+                </div>
+            </div>
+        </div>
+         
+            <div>
+                <lightning-formatted-rich-text
+                    class="body" value={previewBody}>
+                </lightning-formatted-rich-text>  
+            </div>
+    </div>
+</template>

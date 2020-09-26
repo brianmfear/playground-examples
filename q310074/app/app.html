@@ -1,0 +1,10 @@
+    <template>
+    <lightning-progress-indicator current-step={currentStep} type="path" variant="base">
+        <template for:each={steps} for:item="step">
+            <lightning-progress-step label={step.label} value={step.value} key={step.label} onclick={handleOnClick} data-id={step.value}></lightning-progress-step>
+        </template>
+    </lightning-progress-indicator>
+    <template if:true={testVar}>
+        Toggling: Track variable is the problem
+    </template>
+</template>

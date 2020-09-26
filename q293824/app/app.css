@@ -1,0 +1,8 @@
+.vert-nav-item {
+    /* box-shadow: 3px 3px pink; */
+}
+
+.vert-nav-item:hover {
+    border-left: none;
+    background-color: #fff;
+}

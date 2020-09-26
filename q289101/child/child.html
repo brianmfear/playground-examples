@@ -1,0 +1,10 @@
+<template>
+    <div class="child-border">
+    We are in the child area.
+    <c-grandchild>
+        <div slot="insert">
+            <slot name="insert">Default child content</slot>
+        </div>
+    </c-grandchild>
+    </div>
+</template>

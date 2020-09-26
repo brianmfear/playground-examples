@@ -1,0 +1,30 @@
+<template>
+<lightning-layout>
+<lightning-layout-item>
+<table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th>
+                        <div style="font-weight: bold;">Adhoc Quantity Product</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template if:true={prodAttributeRecords}>
+                    <template for:each={prodAttributeRecords} for:item="prodAttribute">
+                        <tr key={prodAttribute.value}>
+                            <td>
+                                <div>
+                                    <lightning-combobox options={clientServiceNames} variant="label-hidden">
+
+                                    </lightning-combobox>
+                                </div>
+                            </td>
+                        </tr>
+                    </template>
+                </template>
+            </tbody>
+        </table>
+</lightning-layout-item>
+</lightning-layout>
+</template>

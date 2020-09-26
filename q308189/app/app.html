@@ -1,0 +1,8 @@
+<template>
+    <template for:each={data} for:item="row">
+        <div key={row.id}>
+            <lightning-button-icon onclick={toggle} data-row-id={row.id} icon-name={row.iconName}>
+            </lightning-button-icon>
+        </div>
+    </template>
+</template>

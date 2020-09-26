@@ -1,0 +1,16 @@
+<template>
+<template for:each={existingUsers} for:item="item">
+<li key={item.id} role="presentation" class="slds-listbox__item">
+
+<lightning-pill
+        label={item.UserOrGroup.Name}
+        title={item.UserOrGroup.Name}
+        onremove={handleRemoveSelectedItem}
+        name={item.id}
+>
+    <lightning-icon icon-name={item.icon}></lightning-icon>
+</lightning-pill>
+</li>
+
+</template>
+</template>

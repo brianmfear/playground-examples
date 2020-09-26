@@ -1,0 +1,8 @@
+<template>
+    <div class="slds-col slds-p-around_xx-small">
+            <c-search cart-items={cartItems} oncartitemadd={handleCartItemChange} ></c-search>
+        </div>
+        <div class="slds-col slds-p-around_xx-small">
+            <c-app cart-items={cartItems} oncartitemremove={handleCartItemChange}></c-app>
+        </div>
+</template>

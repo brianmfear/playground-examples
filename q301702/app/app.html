@@ -1,0 +1,19 @@
+<template>
+<lightning-radio-group name="myOptions" class="customRadioCls"
+    label="My Options"
+    options={myoptions}
+    onchange={getSelection}
+    type="button"
+    variant="label-inline" style="padding-right: 5px;padding-left: 5px;">
+</lightning-radio-group>  
+<template if:true={isOption1}>                
+    <div class="slds-m-around_medium slds-text-heading_small">
+        My conditional display for Option 1
+    </div>
+</template>
+<template if:true={isOption2}>                
+    <div class="slds-m-around_medium slds-text-heading_small">
+        My conditional display for Option 2
+    </div>
+</template>
+</template>

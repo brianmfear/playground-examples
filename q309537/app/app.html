@@ -1,0 +1,15 @@
+<template>
+    <lightning-checkbox-group
+      if:true={emailOptions}
+      name="emailTemplateNameSelect"
+      label="Select the Email Template Name"
+      value={selectedEmails}
+      options={emailOptions}
+      onchange={handleEmailNameChange}
+      class="slds-p-around_small"
+    >
+    </lightning-checkbox-group>
+  <div for:each={selectedTemplates} for:item="template" key={template.Id}>
+      {template.Subject}
+  </div>    
+</template>

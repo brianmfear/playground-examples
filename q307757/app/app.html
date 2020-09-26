@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Filters">
+        <div class="slds-align_absolute-center">
+    <template for:each={alphabet} for:item="letter">
+        &nbsp;<a onclick={handleFilterChange} key={letter} data-filter={letter}>
+            {letter}
+        </a>
+        &nbsp;|
+    </template>
+    <a onclick={handleFilterChange} data-filter="">
+        ALL
+    </a>
+        </div>
+    <lightning-datatable 
+        columns={columns}
+        data={currentPage}
+        key-field="index">
+    </lightning-datatable>
+    <div class="slds-align_absolute-center">
+    <lightning-button-group>
+    <lightning-button label="First" onclick={firstPage}>
+    </lightning-button>
+    <lightning-button label="Previous" onclick={previousPage}>
+    </lightning-button>
+    <div class="slds-m-horizontal_medium slds-align_absolute-center">
+    {pageNumber} of {maxPageNumber}
+    </div>
+    <lightning-button label="Next" onclick={nextPage}>
+    </lightning-button>
+    <lightning-button label="Last" onclick={lastPage}>
+    </lightning-button>
+    </lightning-button-group>
+    </div>
+    </lightning-card>
+</template>

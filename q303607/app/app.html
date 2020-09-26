@@ -1,0 +1,11 @@
+<template>
+<lightning-dual-listbox name="Select Fields to display"
+    label="Select Fields to display"
+    source-label="Available"
+    selected-label="Selected"
+    field-level-help="Select fields which you want display in the list view"
+    options={options}
+    value ={defaultValues}></lightning-dual-listbox>
+    <lightning-button label="Set Values" onclick={setValues}>
+    </lightning-button>
+</template>

@@ -1,0 +1,30 @@
+.scrollArea {
+    position: fixed;
+    /*border: 1px solid red;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    overflow: auto;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    border: 1ps solid green;
+}
+.innerArea {
+    /*display: inline-block; */
+    /*position: relative;*/
+    /*border: 1px solid black;*/
+    /*min-width: 1000px;*/
+    min-height: 1000px;
+}
+
+.toTheTop {
+  position: fixed;
+  right: 20px;
+  top: 90%;
+  margin-top: -2.5em;
+}

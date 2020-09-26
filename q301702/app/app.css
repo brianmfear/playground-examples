@@ -1,0 +1,21 @@
+.lightning-radiogroup_radiogroup{
+     padding-left:0.5rem;
+     padding-right:0.5rem;
+}
+
+.customRadioCls{
+     padding-left:0.25rem;
+     padding-right:0.25rem;
+}
+.slds-form-element__control .slds-radio{
+    padding-left:0.5rem !important;
+    padding-right:0.5rem !important;
+}
+.slds-radio_button .slds-radio_faux{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.slds-radio_button .slds-radio_button__label{
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}

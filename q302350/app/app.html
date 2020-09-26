@@ -1,0 +1,16 @@
+<template>
+    <template iterator:itera={iteList}>
+    <lightning-dual-listbox name="languages"
+                            label="Select Languages"
+                            source-label="Available"
+                            selected-label="Selected"
+                            key={itera.value}
+                            
+                            field-level-help="Select your preferred languages"
+                            options={options}
+                            ></lightning-dual-listbox>
+    <div class="slds-box" key={itera.value} >
+        <p>Selected values are: {selected}</p>
+    </div>
+    </template>
+</template>

@@ -1,0 +1,11 @@
+<template>
+<div style="width: 220px;">
+    <lightning-vertical-navigation>
+        <lightning-vertical-navigation-section>
+            <template for:each={clientsList} for:item="client">
+                <lightning-vertical-navigation-item  class="vert-nav-item" key={client.name} label={client.name} name={client.name}></lightning-vertical-navigation-item>
+            </template>
+        </lightning-vertical-navigation-section>
+    </lightning-vertical-navigation>
+</div>
+</template>

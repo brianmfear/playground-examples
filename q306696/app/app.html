@@ -1,0 +1,13 @@
+<template>
+ <div>
+        <h2>Live Input Number</h2>
+        <lightning-input type="number" name="seven" 
+        value={amount} onchange={handleAmountChange} 
+        step="0.25"
+        placeholder="type the number of items..." label="Enter a number"  ></lightning-input>
+        <p>
+            Number of Items: {amount}
+        </p>
+    </div>
+
+</template>

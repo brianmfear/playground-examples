@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Demo Screen"  class="slds--around_medium">   
+        <div class="slds-size_1-of-2">
+            <lightning-combobox
+                name="Month"
+                label="Month"
+                value={value}
+                placeholder="Select Month"
+                options={months}
+                onchange={handleMonthChange}
+            ></lightning-combobox>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,9 @@
+<template>
+    <template for:each={rows} for:item="item">
+        <div key={item.id} data-key={item.id}>
+            <input onchange={handleChange} value={item.value} /><br />
+            "{item.test}"
+            "{item.value}"
+        </div>
+    </template>
+</template>

@@ -1,0 +1,19 @@
+<template>
+<lightning-card title="HelloForEach" icon-name="custom:custom14">
+<ul class="slds-m-around_medium">
+<template for:each={contacts} for:item="contact">
+
+<div key={contact.Id}>
+
+
+    <lightning-checkbox-group name="Checkbox Group"
+                label="Checkbox Group"
+                options={options}
+                value={contact.value}>
+                </lightning-checkbox-group>{contact.Name}
+
+</div>
+</template>
+</ul>
+</lightning-card>
+</template>

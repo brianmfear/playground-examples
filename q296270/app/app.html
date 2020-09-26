@@ -1,0 +1,16 @@
+<template>
+    <lightning-datatable 
+        columns={columns}
+        data={pageRecords}
+        sorted-by={sortedBy}
+        sorted-direction={sortedDirection}
+        key-field="id"
+        onsort={sort}>
+    </lightning-datatable>
+    <lightning-button label="Prev" onclick={prevPage}>
+    </lightning-button>
+    
+    {thisPage}/{maxPage}
+    <lightning-button label="Next" onclick={nextPage}>
+    </lightning-button>
+</template>

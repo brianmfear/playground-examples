@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Product Cart" icon-name="utility:cart">
+        <div class="slds-m-around_medium">
+            <template for:each={cartItems} for:item="item">
+                <c-child 
+                    key={item} 
+                    cart-item={item} 
+                    cart-items={cartItems} 
+                    oncartitemremove={handleRemove}>
+                </c-child>
+            </template>
+        </div>
+    </lightning-card>
+</template>

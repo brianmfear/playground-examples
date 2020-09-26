@@ -1,0 +1,9 @@
+<template>
+    <lightning-input type="range" name="columnCount" value={columnCount} min="1" max="1000" label="Columns" onchange={setValue}>
+    </lightning-input>
+    <lightning-input type="range" name="rowCount" value={rowCount} min="1" max="10000" label="Columns" onchange={setValue}>
+    </lightning-input>
+    {columnCount} x {rowCount}
+    <lightning-datatable key-field="id" data={data} columns={columns}>
+    </lightning-datatable>
+</template>

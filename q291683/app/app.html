@@ -1,0 +1,21 @@
+<template>
+    <br/>
+    <br/>
+    <template if:true={showScreen1}>
+        <c-child
+            onscreenonenext={handleOnScreenNext}
+        >
+        </c-child>
+    </template>
+    <template if:true={showScreen2}>
+        <c-screentwo
+            onscreen2back={handleOnSreen2Back}>
+        </c-screentwo>    
+    </template>
+    <br/>
+    <br/>
+    <br/>
+
+
+
+</template>
